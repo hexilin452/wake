@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Wake</title>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 
 <style>
+
+/* 全局字体 */
 body{
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+}
+
+/* 阅读区域宽度 */
+.markdown-section{
+max-width:900px;
+margin:auto;
+padding:30px;
+}
+
+/* 手机优化 */
+@media screen and (max-width:768px){
+
+.markdown-section{
+padding:20px;
 }
 
 .sidebar{
-    font-size:15px;
+width:240px;
 }
 
-.markdown-section{
-    max-width:900px;
 }
+
+/* 标题优化 */
+
+h1{
+font-size:32px;
+margin-top:20px;
+}
+
+h2{
+margin-top:40px;
+}
+
+/* 代码块 */
+
+pre{
+border-radius:8px;
+}
+
+/* 侧边栏 */
+
+.sidebar{
+border-right:1px solid #eee;
+}
+
+/* 搜索框 */
+
+.search input{
+border-radius:6px;
+}
+
 </style>
 
 </head>
@@ -27,6 +74,7 @@ body{
 <div id="app">Loading...</div>
 
 <script>
+
 window.$docsify = {
 
 name: 'Wake',
@@ -37,18 +85,28 @@ loadSidebar: true,
 
 subMaxLevel: 2,
 
-search: 'auto',
-
 auto2top: true,
 
-coverpage: false,
+search: {
+
+placeholder: '搜索',
+
+noData: '找不到结果',
+
+depth: 3
+
+},
 
 pagination: {
+
 previousText: '上一篇',
+
 nextText: '下一篇'
+
 }
 
 }
+
 </script>
 
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
