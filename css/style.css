@@ -1,4 +1,4 @@
-/* 全局重置 */
+/* 全局重置：和目标站一致的极简基础 */
 * {
     margin: 0;
     padding: 0;
@@ -12,100 +12,117 @@ body {
     background: #fff;
     color: #333;
     font-size: 16px;
+    line-height: 1.6;
 }
 
-/* 按钮样式（和目标站一致） */
+/* 按钮样式：完全复刻目标站 */
 .btn {
     display: inline-block;
     padding: 6px 12px;
-    background: #eee;
-    border: 1px solid #ddd;
+    background: #f0f0f0;
+    border: 1px solid #e0e0e0;
     border-radius: 4px;
     text-decoration: none;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* 垂直排列，匹配目标站 */
+    font-size: 14px;
 }
 .btn:hover {
-    background: #e0e0e0;
+    background: #e8e8e8;
 }
 
 /* 标题栏 */
 .blog-header {
     margin-bottom: 30px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #f0f0f0;
 }
 .blog-header h1 {
     font-size: 24px;
     font-weight: normal;
 }
 
-/* 主容器：flex 分栏 */
+/* 主容器：flex分栏，和目标站比例一致 */
 .main-container {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-/* 文章列表 */
+/* 文章列表：占比70%，匹配目标站 */
 .article-list {
     flex: 1 1 700px;
 }
 .article-item {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px dashed #eee;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #f0f0f0;
 }
+/* 文章标题：无下划线，黑色，匹配目标站 */
 .article-title {
     font-size: 20px;
     font-weight: normal;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
+.article-link {
+    color: #333;
+    text-decoration: none; /* 去掉链接下划线 */
+}
+.article-link:hover {
+    color: #666; /* hover时轻微变灰，匹配目标站 */
+}
+/* 文章简介：浅灰色，小字号 */
 .article-desc {
     color: #666;
     margin-bottom: 8px;
-    line-height: 1.5;
-}
-.article-meta {
     font-size: 14px;
+    line-height: 1.7;
+}
+/* 文章元信息：更浅的灰色，更小字号 */
+.article-meta {
+    font-size: 12px;
     color: #999;
     margin-bottom: 8px;
 }
 .article-meta span {
     margin-right: 15px;
 }
+/* 文章标签 */
 .article-tag {
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
     text-decoration: none;
 }
 
-/* 侧边栏 */
+/* 侧边栏：占比30%，匹配目标站 */
 .sidebar {
     flex: 1 1 250px;
 }
 .sidebar-module {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px dashed #eee;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #f0f0f0;
 }
 .sidebar-module h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    color: #333;
 }
 .sidebar-module p {
     color: #666;
     line-height: 1.8;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+    font-size: 14px;
 }
 
-/* 移动端适配 */
+/* 移动端适配：和目标站一致的响应式 */
 @media (max-width: 768px) {
     .main-container {
         gap: 20px;
     }
     .article-item, .sidebar-module {
         margin-bottom: 20px;
+        padding-bottom: 15px;
     }
 }
