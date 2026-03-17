@@ -4,23 +4,8 @@
 
 ---
 
-<div class="card">
-<h3>反思</h3>
-<p class="time">2026-03-17</p>
-<p>关于最近状态的一些思考。</p>
-<a href="#/posts/反思.md">阅读全文 →</a>
-</div>
+## 🆕 最新文章
 
-<div class="card">
-<h3>复盘</h3>
-<p class="time">2026-03-17</p>
-<p>对近期行为和选择的复盘。</p>
-<a href="#/posts/复盘.md">阅读全文 →</a>
-</div>
+<!-- 自动加载文章列表 -->
 
-<div class="card">
-<h3>想法</h3>
-<p class="time">2026-03-17</p>
-<p>一些零散但重要的念头。</p>
-<a href="#/posts/想法.md">阅读全文 →</a>
-</div>
+<iframe src="#/posts/_posts.md" style="width:100%;height:600px;border:none;"></iframe>
